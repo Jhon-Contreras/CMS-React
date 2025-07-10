@@ -88,7 +88,7 @@ const CMS = () => {
         <div className="row">
           <Form onSubmit={addContact}></Form>
         </div>
-        <div className="row mt-5 px-2">
+        <div className="row mt-5">
           <Table contacts={contacts} onClick={deleteContact}></Table>
         </div>
       </div>
