@@ -11,6 +11,11 @@
   box-shadow: 1px 1px 18px #00000047;
   width: 60% !important;
 }
+@media (max-width: 720px) {
+  .bg-container-custom {
+    width: 90% !important;
+  }
+}
 .borderRadiusTb {
   border-radius: 5px;
 }
