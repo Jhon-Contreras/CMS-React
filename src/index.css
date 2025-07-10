@@ -1,0 +1,22 @@
+.bg-container-fluid-custom {
+  background-color: #032830;
+  min-height: 100vh;
+  height: auto;
+  padding: 30px 0px;
+}
+.bg-container-custom {
+  background-color: #053742;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 1px 1px 18px #00000047;
+  width: 60% !important;
+}
+.borderRadiusTb {
+  border-radius: 5px;
+}
+.form-label {
+  color: white;
+}
+button {
+  margin-right: 5px;
+}
