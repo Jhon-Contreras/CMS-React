@@ -3,7 +3,6 @@
 # 📇 Contact Manager System
 
 Un sistema simple de gestión de contactos hecho con **React + TypeScript**. Permite agregar, listar y eliminar contactos utilizando formularios validados con Zod y react-hook-form.
-Permite agregar, listar y eliminar contactos utilizando formularios validados con Zod y react-hook-form.  
 Incluye una API REST serverless construida con **AWS Lambda, DynamoDB y API Gateway** para persistencia en la nube.
 
 ---
