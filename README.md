@@ -69,7 +69,7 @@ Amazon DynamoDB: tabla contacts_cms que almacena contactos con los siguientes ca
 1. Clona el repositorio
 
 ```bash
-git clone https://github.com/Jhon-Contreras/CMS
+git clone https://github.com/Jhon-Contreras/CMS-React
 
 ```
 
