@@ -18,7 +18,7 @@ function Input({ name, children, placeholder }: Props) {
       <input
         {...register(name)}
         type="text"
-        className="form-control"
+        className="form-control text-white border-0"
         id={name}
         placeholder={placeholder}
       />

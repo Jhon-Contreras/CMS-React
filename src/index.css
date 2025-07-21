@@ -1,14 +1,28 @@
 .bg-container-fluid-custom {
-  background-color: #032830;
+  background: linear-gradient(135deg, #0f1320, #1a1f33, #11182b, #0a0e18);
+  background-size: 400% 400%;
+  animation: gradientFlow 20s ease infinite;
   min-height: 100vh;
   height: auto;
   padding: 30px 0px;
 }
+@keyframes gradientFlow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
 .bg-container-custom {
-  background-color: #053742;
+  background-color: #252d49;
+  border: 1px solid #495fb1;
   border-radius: 10px;
   padding: 30px;
-  box-shadow: 1px 1px 18px #00000047;
+  box-shadow: 1px 1px 20px #00000038;
   width: 60% !important;
 }
 @media (max-width: 720px) {
@@ -19,8 +33,34 @@
 .borderRadiusTb {
   border-radius: 5px;
 }
+form {
+  border-top: 1px solid #495fb180;
+}
+form .form-control {
+  border: 1px solid rgba(255, 255, 255, 0.152) !important;
+  background-color: #ffffff1f;
+  color: white !important;
+  font-weight: 100;
+}
+form .form-control:focus {
+  background-color: #ffffff1f;
+}
+form .form-control::placeholder {
+  color: white;
+  opacity: 1; /* para que no sea transparente */
+  font-weight: 100;
+}
+form .form-select {
+  border: 1px solid rgba(255, 255, 255, 0.152) !important;
+  background-color: #ffffff1f;
+  color: rgb(255, 255, 255) !important;
+}
+form .optionListItem {
+  color: rgb(0, 0, 0) !important;
+}
 .form-label {
   color: white;
+  font-weight: 100;
 }
 button {
   margin-right: 5px;

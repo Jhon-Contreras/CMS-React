@@ -18,9 +18,9 @@ const Select = ({ options, defaultMessage, label, name }: Props) => {
         className="form-select"
         aria-label="Default select example"
       >
-        <option>{defaultMessage}</option>
+        <option className="optionListItem">{defaultMessage}</option>
         {options.map((o) => (
-          <option key={o} value={o}>
+          <option key={o} value={o} className="optionListItem">
             {o}
           </option>
         ))}

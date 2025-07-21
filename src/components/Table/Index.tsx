@@ -1,3 +1,4 @@
+import { BsTrash } from "react-icons/bs";
 import type { Contact } from "../../schemas/Contact";
 
 type Props = {
@@ -8,7 +9,7 @@ type Props = {
 function Table({ contacts, onClick }: Props) {
   return (
     <div className="table-responsive">
-      <table className="table table-hover table-dark table-striped">
+      <table className="table table-success table-striped table-borderless">
         <thead>
           <tr>
             <th scope="col">Nombre</th>
@@ -37,7 +38,7 @@ function Table({ contacts, onClick }: Props) {
                     className="btn btn-sm btn-danger"
                     onClick={() => c.id && onClick(c.id)}
                   >
-                    Eliminar
+                    <BsTrash className="mb-1" /> Eliminar
                   </button>
                 </td>
               </tr>
