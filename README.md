@@ -91,8 +91,11 @@ npm run dev
 
 ```
 src/
-├── App.tsx
+│
+├── App.tsx # Punto de entrada. Renderiza el CMS dentro del provider de contexto
+│
 ├── components/
+│       │
 │       ├── Form/
 │       │     ├── Index.tsx # Formulario con validaciones y envío
 │       │     ├── Input.tsx # Input genérico con react-hook-form
@@ -102,8 +105,21 @@ src/
 │       ├── Table/
 │       │     └── Index.tsx # Tabla para listar y eliminar contactos
 │       │
-│       └── CMS.tsx # Componente principal con estado y lógica de fetch
+│       └── CMS.tsx # Componente principal que consume el contexto
 │
 ├── schemas/
 │       └── Contact.ts # Esquema Zod para validar contactos
+│
+├── context/
+│       └── ContactContext.tsx # Define el contexto global para contactos
+│
+├── hooks/
+│       └── useContact.ts # Custom Hook para acceder al contexto de contactos
+│
+├── providers/
+│       └── ContactProvider.tsx # Provider que maneja el estado global y lógica (useReducer)
+│
+├── reducers/
+        └── contactReducer.ts # Reducer centralizado con acciones (fetch, add, delete)
+
 ```
