@@ -13,6 +13,7 @@ Incluye una API REST serverless construida con **AWS Lambda, DynamoDB y API Gate
 - ⌨️ TypeScript
 - 📋 React Hook Form
 - ✅ Zod (validación de formularios)
+- 🌀 React Query
 - 💅 Bootstrap 5
 - 🔔 React Toastify (notificaciones toast)
 
@@ -34,7 +35,7 @@ Incluye una API REST serverless construida con **AWS Lambda, DynamoDB y API Gate
 - ✅ Validación de formularios en tiempo real con Zod y react-hook-form
 - ✅ Listado dinámico de contactos desde DynamoDB mediante la API serverless
 - ✅ Eliminación de contactos con confirmación visual
-- ✅ Manejo de estados de carga y error para mejorar experiencia UX
+- ✅ Manejo de carga y errores usando React Query y feedback al usuario con Toastify
 - ✅ Código modular y reutilizable (componentes Input, Select, Button, Table, Form)
 - ✅ Arquitectura serverless con AWS para alta escalabilidad y mantenimiento sencillo
 
@@ -105,21 +106,21 @@ src/
 │       ├── Table/
 │       │     └── Index.tsx # Tabla para listar y eliminar contactos
 │       │
-│       └── CMS.tsx # Componente principal que consume el contexto
+│       └── CMS.tsx # Componente principal que consume los hooks de React Query
 │
 ├── schemas/
-│       └── Contact.ts # Esquema Zod para validar contactos
-│
-├── context/
-│       └── ContactContext.tsx # Define el contexto global para contactos
-│
+│       └── Contact.ts # Validación Zod + tipado de Contacto
+|
 ├── hooks/
-│       └── useContact.ts # Custom Hook para acceder al contexto de contactos
+│       │
+│       ├── useContacts.ts # useQuery para obtener contactos
+│       │
+│       └── useContactsMutations.ts # useMutation para agregar/eliminar contactos
 │
-├── providers/
-│       └── ContactProvider.tsx # Provider que maneja el estado global y lógica (useReducer)
-│
-├── reducers/
-        └── contactReducer.ts # Reducer centralizado con acciones (fetch, add, delete)
+└── main.tsx #
 
 ```
+
+## ☁️ Créditos
+
+Proyecto desarrollado por ` [Jhon Contreras](https://www.linkedin.com/in/jhoncontrerassoto/)`, como parte de su formación y prácticas avanzadas en React + AWS.

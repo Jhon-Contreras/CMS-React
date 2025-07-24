@@ -11,6 +11,7 @@ import Select from "./Select";
 
 import { AiOutlineClear } from "react-icons/ai";
 import { BsSend } from "react-icons/bs";
+import { toast } from "react-toastify";
 type Props = {
   onSubmit: (contact: Contact) => void;
 };
@@ -48,7 +49,13 @@ const Form = ({ onSubmit }: Props) => {
           <BsSend className="me-1 mb-1" size={15} />
           Enviar
         </Button>
-        <Button onClick={() => methods.reset()} variant="secondary">
+        <Button
+          onClick={() => {
+            methods.reset();
+            toast.info("Formulario limpiado");
+          }}
+          variant="secondary"
+        >
           <AiOutlineClear className="me-1 mb-1" />
           Limpiar
         </Button>
