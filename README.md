@@ -120,7 +120,3 @@ src/
 └── main.tsx #
 
 ```
-
-## ☁️ Créditos
-
-Proyecto desarrollado por ` [Jhon Contreras](https://www.linkedin.com/in/jhoncontrerassoto/)`, como parte de su formación y prácticas avanzadas en React + AWS.
